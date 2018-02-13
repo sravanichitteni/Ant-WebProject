@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
 		echo "My Branch Name: ${env.BRANCH_NAME}"
-                  ant build.xml
+                  cmd 'ant build'
 	    }
 	}
     }
